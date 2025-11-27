@@ -356,16 +356,16 @@
 
                 const sss = gross * 0.05;
                 const philhealth = gross * 0.03;
-                const love = 200;
+                const pagIbig = 200;
 
-                const totalDeductions = sss + philhealth + love;
+                const totalDeductions = sss + philhealth + pagIbig;
                 const net = gross - totalDeductions;
 
                 attendanceResultEl.innerHTML = '<h4>Total Days Worked:</h4> ' + totalDays;
 
                 grossEl.innerHTML = '<h4>Gross Salary:</h4> ' + formatPHP(gross) + (overtimeHours ? ' (includes ' + formatPHP(overtimePay) + ' OT)' : '');
 
-                deductionsEl.innerHTML = '<h4>Deductions:</h4> SSS (5%): ' + formatPHP(sss) + '\nPhilHealth (3%): ' + formatPHP(philhealth) + '\nLOVE: ' + formatPHP(love);
+                deductionsEl.innerHTML = '<h4>Deductions:</h4> SSS (5%): ' + formatPHP(sss) + '\nPhilHealth (3%): ' + formatPHP(philhealth) + '\nPag Ibig: ' + formatPHP(pagIbig);
 
                 totalDeductionsEl.innerHTML = '<h4>Total Deductions:</h4> ' + formatPHP(totalDeductions);
 
